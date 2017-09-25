@@ -11,7 +11,11 @@ The plugin provides tasks for uploading, downloading, running and managing [Goog
 
 To use the App Engine plugin, include in your build script:
 
-    apply plugin: 'appengine'
+```gradle
+apply plugin: 'java'
+apply plugin: 'war' // or 'ear'
+apply plugin: 'appengine'
+```
 
 The plugin JAR needs to be defined in the classpath of your build script. It is directly available on
 [Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.google.appengine%22%20AND%20a%3A%22gradle-appengine-plugin%22).
